@@ -18,12 +18,5 @@ section {
 
 .card p {
     text-align: center;
-}
-
-.card p:nth-child(2) {
-    color: aqua;
-}
-
-.card p:nth-child(3) {
     color: aqua;
 }
