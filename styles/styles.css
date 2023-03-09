@@ -1,5 +1,12 @@
+:root {
+    --papayawhip: papayawhip;   
+    --sm: 3rem;
+    --md: 5rem;
+    --lg: 9rem;
+}
+
 html {
-    background-color: papayawhip;
+    background-color: var(--papayawhip);
     font-family: sans-serif;
     font-size: 62.5%;
     @media (min-width:300px) {
@@ -27,12 +34,25 @@ header {
 }
 
 .card p {
-    text-align: center;
+    font-size: var(--sm);
     color: aqua;
+    text-align: center;
 }
 
 #Projects {
     display: flex;
     justify-content: center;
     flex-direction: column;
+}
+
+#Projects h1 {
+    font-size: var(--md);
+}
+
+#Projects a {
+    font-size: var(--sm);
+}
+
+footer {
+    font-size: var(--sm);
 }
