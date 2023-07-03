@@ -1,14 +1,16 @@
 :root {
-    --papayawhip: papayawhip;   
+    --bgc: pink; 
+    --textcolor: aqua;  
     --sm: 3rem;
     --md: 5rem;
     --lg: 9rem;
 }
 
 html {
-    background-color: var(--papayawhip);
+    background-color: var(--bgc);
     font-family: sans-serif;
     font-size: 62.5%;
+    color: var(--textcolor);
     @media (min-width:300px) {
         #Projects img {
             width 35%
@@ -17,26 +19,9 @@ html {
 }
 header {
     width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-.card {
-    width: 300px;
-    height: 300px;
-    background: rgb(33, 33, 145);
-    border-radius: 20px;
-    overflow: hidden;
-}
-
-.card img {
-    width: 50%;
-}
-
-.card p {
-    font-size: var(--sm);
-    color: aqua;
     text-align: center;
+    font-size: var(--sm);
+    background: var(--bgc);  
 }
 
 #Projects {
@@ -47,6 +32,7 @@ header {
 
 #Projects h1 {
     font-size: var(--md);
+
 }
 
 #Projects a {
