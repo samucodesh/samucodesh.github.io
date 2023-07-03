@@ -1,6 +1,7 @@
 :root {
-    --bgc: pink; 
-    --textcolor: aqua;  
+    --bgc: blue; 
+    --textcolor: aqua;
+    --linkscolor: antiquewhite;  
     --sm: 3rem;
     --md: 5rem;
     --lg: 9rem;
@@ -32,13 +33,17 @@ header {
 
 #Projects h1 {
     font-size: var(--md);
-
+    
 }
 
 #Projects a {
     font-size: var(--sm);
+    color: var(--linkscolor);
 }
 
 footer {
     font-size: var(--sm);
+}
+footer a {
+    color: var(--linkscolor);
 }
