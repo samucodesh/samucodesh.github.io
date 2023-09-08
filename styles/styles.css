@@ -14,12 +14,12 @@ html {
     color: var(--textcolor);
     @media (min-width:300px) {
         #Projects img {
-            width 35%
+            width: auto;
+            height: auto;
         }
     }
 }
 header {
-    width: 100%;
     text-align: center;
     font-size: var(--sm);
     background: var(--bgc);  
@@ -28,6 +28,7 @@ header {
 #Projects {
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
 }
 
