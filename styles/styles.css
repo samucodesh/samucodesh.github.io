@@ -14,8 +14,8 @@ html {
     color: var(--textcolor);
     @media (min-width:300px) {
         #Projects img {
-            width: 720px;
-            height: 540px;
+            width: auto;
+            height: auto;
         }
     }
 }
