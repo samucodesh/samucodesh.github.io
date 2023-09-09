@@ -12,6 +12,6 @@ The website consists of three main parts:
 
 On pause for two quarters (current date 08-09-23)
 
-## Registro de cambios
+## Changelog
 
 you can check the changelog on [the wiki](https://github.com/samucodesh/samucodesh.github.io/wiki)
