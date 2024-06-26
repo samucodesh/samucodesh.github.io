@@ -1,7 +1,7 @@
 :root {
     color-scheme: light dark;
     --bgcl: #B3FFFF; 
-    --bgcd: #d3d9de; 
+    --bgcd: #103552; 
     --textcolorl: #1F2328;
     --textcolord: #E6EDF3;
     --linkscolorl: #1F2328; 
@@ -24,6 +24,10 @@ html {
 header {
     text-align: center;
     font-size: var(--lg); 
+}
+
+#gcalendar {
+    font-size: var(--sm);
 }
 
 footer {
