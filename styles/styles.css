@@ -1,50 +1,38 @@
 :root {
-    --bgc: #B3FFFF; 
-    --textcolor: #2F4F4F;
-    --linkscolor: #2F4F4F;  
-    --sm: 3rem;
-    --md: 5rem;
-    --lg: 9rem;
+    color-scheme: light dark;
+    --bgcl: #B3FFFF; 
+    --bgcd: #d3d9de; 
+    --textcolorl: #1F2328;
+    --textcolord: #E6EDF3;
+    --linkscolorl: #1F2328; 
+    --linkscolord: #E6EDF3; 
+    --sm: 2rem;
+    --md: 4rem;
+    --lg: 8rem;   
 }
 
 html {
-    background-color: var(--bgc);
-    font-family: sans-serif;
-    font-size: 62.5%;
-    color: var(--textcolor);
-    @media (min-width:300px) {
-        #Projects img {
-            width: auto;
-            height: auto;
-        }
-    }
+    @container (min-width:300px){
+        background-color: light-dark(var(--bgcl),var(--bgcd));
+        color: light-dark(var(--textcolorl), var(--textcolord));
+        font-family: sans-serif;
+        font-size: 20px;
+    }         
+        
 }
+
 header {
     text-align: center;
-    font-size: var(--sm);
-    background: var(--bgc);  
-}
-
-#Projects {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-#Projects h1 {
-    font-size: var(--md);
-    
-}
-
-#Projects a {
-    font-size: var(--sm);
-    color: var(--linkscolor);
+    font-size: var(--lg); 
 }
 
 footer {
     font-size: var(--sm);
 }
+
 footer a {
-    color: var(--linkscolor);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: light-dark(var(--textcolorl), var(--textcolord));
 }
