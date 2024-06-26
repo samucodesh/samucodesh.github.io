@@ -1,11 +1,11 @@
 :root {
     color-scheme: light dark;
-    --bgcl: #B3FFFF; 
-    --bgcd: #103552; 
-    --textcolorl: #1F2328;
-    --textcolord: #E6EDF3;
-    --linkscolorl: #1F2328; 
-    --linkscolord: #E6EDF3; 
+    --bgcl: #BFF; 
+    --bgcd: #135; 
+    --textcolorl: #135;
+    --textcolord: #EEF;
+    --linkscolorl: #135; 
+    --linkscolord: #EEF; 
     --sm: 2rem;
     --md: 4rem;
     --lg: 8rem;   
@@ -13,7 +13,7 @@
 
 html {
     @container (min-width:300px){
-        background-color: light-dark(var(--bgcl),var(--bgcd));
+        background-color: light-dark(var(--bgcl), var(--bgcd));
         color: light-dark(var(--textcolorl), var(--textcolord));
         font-family: sans-serif;
         font-size: 20px;
@@ -26,11 +26,7 @@ header {
     font-size: var(--lg); 
 }
 
-#gcalendar {
-    font-size: var(--sm);
-}
-
-footer {
+.gcalendar {
     font-size: var(--sm);
 }
 
@@ -38,5 +34,6 @@ footer a {
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-size: var(--sm);
     color: light-dark(var(--textcolorl), var(--textcolord));
 }
