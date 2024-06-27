@@ -1,31 +1,55 @@
+/* 
+* Set up root-level styles using CSS variables for easy customization and theme switching.
+* color-scheme: Allows the browser to apply user-preferred color schemes (light/dark mode).
+*/
 :root {
-    color-scheme: light dark;
-    --bgcl: #CEE; 
-    --bgcd: #003; 
-    --textcolorl: #330;
-    --textcolord: #EEF;
-    --sm: 2rem;
-    --lg: 8rem;   
+    color-scheme: light dark; 
+    --bgcl: #CEE; /* Light background color */
+    --bgcd: #003; /* Dark background color */
+    --textcolorl: #330; /* Light text color */
+    --textcolord: #EEF; /* Dark text color */
+    --sm: 2rem; /* Small font size */
+    --lg: 8rem;  /* Large font size */ 
 }
 
+/* 
+* Apply styles to the <html> element when the viewport width is at least 300px.
+* Uses @container for responsive styling, targeting a minimum width of 300px.
+* Sets background color and text color dynamically based on the preferred color scheme (light or dark).
+*/
 html {
-    @container (min-width:300px){
-        background-color: light-dark(var(--bgcl), var(--bgcd));
-        color: light-dark(var(--textcolorl), var(--textcolord));
+    @container (min-width: 300px) { 
+        background-color: light-dark(var(--bgcl), var(--bgcd)); 
+        color: light-dark(var(--textcolorl), var(--textcolord)); 
         font-family: sans-serif;
     }         
-        
 }
 
+/*
+* Style the <header> element.
+* Centers the text within the header.
+* Sets font size to the value of the --lg variable (large).
+*/
 header {
     text-align: center;
     font-size: var(--lg); 
 }
 
+/*
+* Style elements with the class 'gcalendar'.
+* Sets font size to the value of the --sm variable (small). 
+*/
 .gcalendar {
     font-size: var(--sm);
 }
 
+/*
+* Style <a> elements within the <footer>.
+* Uses flexbox for vertical alignment of content within the link.
+* Centers the link content both horizontally and vertically.
+* Sets font size to the value of the --sm variable (small).
+* Sets link color based on the preferred color scheme (light or dark).
+*/
 footer a {
     display: flex;
     flex-direction: column;
