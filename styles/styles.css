@@ -10,8 +10,8 @@
     /* Light text color  #333*/
     /* Dark text color #FFF*/
     --highligth-color: light-dark(#333, #FFF)
-    --sm: 2rem; /* Small font size */
-    --lg: 8rem;  /* Large font size */ 
+    --sm: 3rem; /* Small font size */
+    --lg: 9rem;  /* Large font size */ 
 }
 
 /* 
@@ -27,12 +27,10 @@ html {
     }         
 }
 
-/*
-* Style the <header> element.
-* Centers the text within the header.
-* Sets font size to the value of the --lg variable (large).
+/* 
+Styles the GitHub Sponsors section to center text and use the large font size 
 */
-header {
+.gh-sponsors {
     text-align: center;
     font-size: var(--lg); 
 }
@@ -46,16 +44,22 @@ header {
 }
 
 /*
-* Style <a> elements within the <footer>.
+* Style <a> elements within the <nav>.
 * Uses flexbox for vertical alignment of content within the link.
 * Centers the link content both horizontally and vertically.
 * Sets font size to the value of the --sm variable (small).
 * Sets link color based on the preferred color scheme (light or dark).
 */
-footer a {
+/* Styles for navigation links to improve touch usability */
+nav a {
     display: flex;
     flex-direction: column;
     align-items: center;
     font-size: var(--sm);
     color: var(--highlight-color);
+    /* Enhance touch target size and spacing */
+    padding: 1rem; /* Adds padding all around */
+    min-width: 80px; /* Ensures a minimum width for touch */
+    margin: 0.5rem;  /* Adds spacing between links */
+    text-decoration: none; /* Removes underline for a cleaner touch target */
 }
