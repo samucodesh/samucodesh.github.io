@@ -10,8 +10,8 @@
     /* Light text color  #333*/
     /* Dark text color #FFF*/
     --highligth-color: light-dark(#333, #FFF)
-    --sm: 3rem; /* Small font size */
-    --lg: 9rem;  /* Large font size */ 
+    --sm: 5rem; /* Small font size */
+    --lg: 12rem;  /* Large font size */ 
 }
 
 /* 
@@ -59,7 +59,6 @@ nav a {
     color: var(--highlight-color);
     /* Enhance touch target size and spacing */
     padding: 1rem; /* Adds padding all around */
-    min-width: 80px; /* Ensures a minimum width for touch */
     margin: 0.5rem;  /* Adds spacing between links */
     text-decoration: none; /* Removes underline for a cleaner touch target */
 }
