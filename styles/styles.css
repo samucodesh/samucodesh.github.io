@@ -10,8 +10,8 @@
     /* Light text color  #333*/
     /* Dark text color #FFF*/
     --highligth-color: light-dark(#333, #FFF)
-    --sm: 5rem; /* Small font size */
-    --lg: 12rem;  /* Large font size */ 
+    --sm: 3rem; /* Small font size */
+    --lg: 6rem;  /* Large font size */ 
 }
 
 /* 
@@ -20,6 +20,7 @@
 * Sets background color and text color dynamically based on the preferred color scheme (light or dark).
 */
 html {
+    font-size: 62.5%;
     @container (min-width: 300px) { 
         background-color: var(--bg-color); 
         color: var(--highlight-color); 
@@ -55,7 +56,7 @@ nav a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: var(--sm);
+    font-size: var(--lg);
     color: var(--highlight-color);
     /* Enhance touch target size and spacing */
     padding: 1rem; /* Adds padding all around */
