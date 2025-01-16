@@ -57,6 +57,8 @@ nav a {
     flex-direction: column;
     align-items: center;
     font-size: var(--lg);
+    white-space: nowrap;
+    overflow: hidden;
     color: var(--highlight-color);
     /* Enhance touch target size and spacing */
     padding: 1rem; /* Adds padding all around */
