@@ -13,33 +13,13 @@ html {
     font-size: 62.5%;
     color: var(--textcolor);
     @media (min-width:300px) {
-        #Projects img {
-            width: auto;
-            height: auto;
-        }
+        
     }
 }
 header {
     text-align: center;
     font-size: var(--sm);
     background: var(--bgc);  
-}
-
-#Projects {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-#Projects h1 {
-    font-size: var(--md);
-    
-}
-
-#Projects a {
-    font-size: var(--sm);
-    color: var(--linkscolor);
 }
 
 footer {
