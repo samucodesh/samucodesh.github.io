@@ -17,13 +17,10 @@
 /* 
 * Apply styles to the <html> element when the viewport width is at least 300px.
 * Uses @container for responsive styling, targeting a minimum width of 300px.
-* Sets background color and text color dynamically based on the preferred color scheme (light or dark).
 */
 html {
     font-size: 62.5%;
     @container (min-width: 300px) { 
-        background-color: var(--bg-color); 
-        color: var(--highlight-color); 
         font-family: sans-serif;
     }         
 }
