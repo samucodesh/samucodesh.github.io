@@ -23,6 +23,7 @@
 html {
     font-family: sans-serif;
     font-size: 62.5%;
+    background-color: light-dark(var(--bg-color-l),var(--bg-color-d));
     @container (min-width: 300px) { 
      
     }         
@@ -59,7 +60,6 @@ nav a {
     font-size: var(--lg);
     white-space: nowrap;
     overflow: hidden;
-    background-color: light-dark(var(--bg-color-l),var(--bg-color-d));
     color: light-dark(var(--highligth-color-l),var(--highligth-color-d));
     /* Enhance touch target size and spacing */
     padding: 1rem; /* Adds padding all around */
