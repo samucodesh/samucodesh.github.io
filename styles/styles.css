@@ -4,12 +4,14 @@
 */
 :root {
     color-scheme: light dark; 
-     /* Light background color #FFF*/
-    /* Dark background color  #222   */
-    --bg-color: light-dark(#FFF, #222)
-    /* Light text color  #333*/
-    /* Dark text color #FFF*/
-    --highligth-color: light-dark(#333, #FFF)
+     /* Light background color #f0f6fc*/
+     --bg-color-l: #f0f6fc;
+    /* Dark background color  ##0d1117   */
+    --bg-color-d: ##0d1117;
+    /* Light text color  #1f2328*/
+    --highligth-color-l: #1f2328;
+    /* Dark text color #f0f6fc*/
+    --highligth-color-d: #f0f6fc;
     --sm: 3rem; /* Small font size */
     --lg: 6rem;  /* Large font size */ 
 }
@@ -19,9 +21,10 @@
 * Uses @container for responsive styling, targeting a minimum width of 300px.
 */
 html {
+    font-family: sans-serif;
     font-size: 62.5%;
     @container (min-width: 300px) { 
-        font-family: sans-serif;
+     
     }         
 }
 
@@ -30,7 +33,7 @@ Styles the GitHub Sponsors section to center text and use the large font size
 */
 .gh-sponsors {
     text-align: center;
-    font-size: var(--lg); 
+    font-size: var(--lg);
 }
 
 /*
@@ -56,7 +59,8 @@ nav a {
     font-size: var(--lg);
     white-space: nowrap;
     overflow: hidden;
-    color: var(--highlight-color);
+    background-color: light-dark(var(--bg-color-l),var(--bg-color-d));
+    color: light-dark(var(--highligth-color-l),var(--highligth-color-d));
     /* Enhance touch target size and spacing */
     padding: 1rem; /* Adds padding all around */
     margin: 0.5rem;  /* Adds spacing between links */
