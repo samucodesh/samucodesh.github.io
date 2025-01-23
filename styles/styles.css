@@ -6,9 +6,9 @@
     color-scheme: light dark; 
      /* Light background color #f0f6fc */
      --bg-color-l: #f0f6fc;
-    /* Dark background color  #0d1117 */
+    /* Dark background color #0d1117 */
     --bg-color-d: #0d1117;
-    /* Light text color  #1f2328 */
+    /* Light text color #1f2328 */
     --highligth-color-l: #1f2328;
     /* Dark text color #f0f6fc */
     --highligth-color-d: #f0f6fc;
@@ -20,6 +20,9 @@
 
 /* 
 * Apply styles to the <html> element when the viewport width is at least 300px.
+ Sets the base font size to 62.5%.  This allows for easier calculation of rem units.  1rem = 10px if the browser's default font size is 16px.
+* --bg-color-l:  Should define the background color for light mode.
+* --bg-color-d:  Should define the background color for dark mode.
 * Uses @container for responsive styling, targeting a minimum width of 300px.
 */
 html {
@@ -48,13 +51,15 @@ Styles the GitHub Sponsors section to center text and use the large font size
 }
 
 /*
-* Style <a> elements within the <nav>.
+* Styling for navigation links (<a> elements) within the <nav> element
 * Uses flexbox for vertical alignment of content within the link.
 * Centers the link content both horizontally and vertically.
-* Sets font size to the value of the --sm variable (small).
-* Sets link color based on the preferred color scheme (light or dark).
+* Sets the font size using a CSS variable (--lg)
+* Sets the text color using the light-dark() function for theme support.
+--highligth-color-l:  CSS variable for the highlight color in light mode.
+--highligth-color-d:  CSS variable for the highlight color in dark mode
+* Styles for navigation links to improve touch usability 
 */
-/* Styles for navigation links to improve touch usability */
 nav a {
     display: flex;
     flex-direction: column;
