@@ -22,9 +22,16 @@ header {
     background: var(--bgc);  
 }
 
-footer {
+nav a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     font-size: var(--sm);
-}
-footer a {
+    white-space: nowrap;
+    overflow: hidden;
     color: var(--linkscolor);
+    /* Enhance touch target size and spacing */
+    padding: 1rem; /* Adds padding all around */
+    margin: 0.5rem;  /* Adds spacing between links */
+    text-decoration: none; /* Removes underline for a cleaner touch target */
 }
