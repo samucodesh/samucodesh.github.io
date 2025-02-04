@@ -22,6 +22,14 @@ header {
     background: var(--bgc);  
 }
 
+/*
+* Style elements with the class 'gcalendar'.
+* Sets font size to the value of the --sm variable (small). 
+*/
+.gcalendar {
+    font-size: var(--sm);
+}
+
 nav a {
     display: flex;
     flex-direction: column;
