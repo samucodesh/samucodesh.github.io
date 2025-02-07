@@ -16,11 +16,6 @@ html {
         
     }
 }
-header {
-    text-align: center;
-    font-size: var(--sm);
-    background: var(--bgc);  
-}
 
 /*
 * Style elements with the class 'gcalendar'.
