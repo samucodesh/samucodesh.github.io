@@ -17,6 +17,14 @@ html {
     }
 }
 
+/* 
+Styles the GitHub Sponsors section to center text and use the large font size 
+*/
+.gh-sponsors {
+    text-align: center;
+    font-size: var(--lg);
+}
+
 /*
 * Style elements with the class 'gcalendar'.
 * Sets font size to the value of the --sm variable (small). 
