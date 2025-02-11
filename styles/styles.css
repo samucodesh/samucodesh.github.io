@@ -1,22 +1,38 @@
+/* 
+* Set up root-level styles using CSS variables for easy customization and theme switching.
+* color-scheme: Allows the browser to apply user-preferred color schemes (light/dark mode).
+*/
 :root {
-    --bgc: #B3FFFF; 
-    --textcolor: #2F4F4F;
-    --linkscolor: #2F4F4F;  
-    --sm: 3rem;
-    --md: 5rem;
-    --lg: 9rem;
+    color-scheme: light dark; 
+     /* Light background color #f0f6fc */
+     --bg-color-l: #f0f6fc;
+    /* Dark background color #0d1117 */
+    --bg-color-d: #0d1117;
+    /* Light text color #1f2328 */
+    --highligth-color-l: #1f2328;
+    /* Dark text color #f0f6fc */
+    --highligth-color-d: #f0f6fc;
+    /* Small font size */
+    --sm: 3rem; 
+    /* Large font size */ 
+    --lg: 6rem;  
 }
 
+/* 
+* Apply styles to the <html> element when the viewport width is at least 300px.
+ Sets the base font size to 62.5%.  This allows for easier calculation of rem units.  1rem = 10px if the browser's default font size is 16px.
+* --bg-color-l:  Should define the background color for light mode.
+* --bg-color-d:  Should define the background color for dark mode.
+* Uses @media for responsive styling, targeting a minimum width of 300px.
+*/
 html {
-    background-color: var(--bgc);
     font-family: sans-serif;
     font-size: 62.5%;
-    color: var(--textcolor);
+    background-color: light-dark(var(--bg-color-l),var(--bg-color-d));
     @media (min-width:300px) {
         
     }
 }
-
 /* 
 Styles the GitHub Sponsors section to center text and use the large font size 
 */
@@ -33,14 +49,24 @@ Styles the GitHub Sponsors section to center text and use the large font size
     font-size: var(--sm);
 }
 
+/*
+* Styling for navigation links (<a> elements) within the <nav> element
+* Uses flexbox for vertical alignment of content within the link.
+* Centers the link content both horizontally and vertically.
+* Sets the font size using a CSS variable (--lg)
+* Sets the text color using the light-dark() function for theme support.
+--highligth-color-l:  CSS variable for the highlight color in light mode.
+--highligth-color-d:  CSS variable for the highlight color in dark mode
+* Styles for navigation links to improve touch usability 
+*/
 nav a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: var(--sm);
+    font-size: var(--lg);
     white-space: nowrap;
     overflow: hidden;
-    color: var(--linkscolor);
+    color: light-dark(var(--highligth-color-l),var(--highligth-color-d));
     /* Enhance touch target size and spacing */
     padding: 1rem; /* Adds padding all around */
     margin: 0.5rem;  /* Adds spacing between links */
